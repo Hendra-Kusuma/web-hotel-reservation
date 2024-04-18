@@ -1,0 +1,86 @@
+[
+    {
+        "name_room": "Deluxe Room",
+        "image_room": "/images/room.jpg",
+        "price": 1500000,
+        "id_hotel": 1
+    },
+    {
+        "name_room": "Suite Room",
+        "image_room": "/images/room.jpg",
+        "price": 2500000,
+        "id_hotel": 1
+    },
+    {
+        "name_room": "Superior Room",
+        "image_room": "/images/room.jpg",
+        "price": 1000000,
+        "id_hotel": 2
+    },
+    {
+        "name_room": "Executive Suite",
+        "image_room": "/images/room.jpg",
+        "price": 3000000,
+        "id_hotel": 2
+    },
+    {
+        "name_room": "Grand Deluxe Room",
+        "image_room": "/images/room.jpg",
+        "price": 1800000,
+        "id_hotel": 3
+    },
+    {
+        "name_room": "Ocean View Room",
+        "image_room": "/images/room.jpg",
+        "price": 2000000,
+        "id_hotel": 3
+    },
+    {
+        "name_room": "Standard Room",
+        "image_room": "/images/room.jpg",
+        "price": 800000,
+        "id_hotel": 4
+    },
+    {
+        "name_room": "Junior Suite",
+        "image_room": "/images/room.jpg",
+        "price": 2200000,
+        "id_hotel": 4
+    },
+    {
+        "name_room": "Family Room",
+        "image_room": "/images/room.jpg",
+        "price": 1800000,
+        "id_hotel": 5
+    },
+    {
+        "name_room": "Penthouse Suite",
+        "image_room": "/images/room.jpg",
+        "price": 5000000,
+        "id_hotel": 5
+    },
+    {
+        "name_room": "Deluxe Room",
+        "image_room": "/images/room.jpg",
+        "price": 1200000,
+        "id_hotel": 6
+    },
+    {
+        "name_room": "Executive Suite",
+        "image_room": "/images/room.jpg",
+        "price": 3000000,
+        "id_hotel": 6
+    },
+    {
+        "name_room": "Standard Room",
+        "image_room": "/images/room.jpg",
+        "price": 1000000,
+        "id_hotel": 7
+    },
+    {
+        "name_room": "Superior Room",
+        "image_room": "/images/room.jpg",
+        "price": 1500000,
+        "id_hotel": 7
+    } 
+]
