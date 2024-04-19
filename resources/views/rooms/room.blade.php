@@ -25,7 +25,7 @@
                             <h5 class="card-title">{{ $room->name_room }}</h5>
                             <p class="card-text">{{ $room->alamat }}</p>
                             <p class="card-text">Credit Price: {{ $room->price }}</p>
-                            <a href="#" class="btn btn-primary">Book Room</a>
+                            <a href="/reservation/{{ $room->id }}" class="btn btn-primary" onclick="return confirm('Are you sure want to book this room?')">Book Room</a>
                             <a href="/room/edit/{{ $room->id }}" class="btn btn-success mb-4 mt-4">Edit Room</a>
                         </div>
                     </div>

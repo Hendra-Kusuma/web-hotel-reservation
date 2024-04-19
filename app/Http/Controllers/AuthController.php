@@ -22,13 +22,20 @@ class AuthController extends Controller
             $request->validate([
                 'name' => 'required|unique:users',
                 'email' => 'required|email|unique:users',
-                'password' => 'required|min:5|max:10'
+                'password' => 'required|min:5|max:10',
+                'image' => 'required',
+                'role' => 'required',
+                'credit_balance'=>'required'
+
             ]);
     
             DB::table('users')->insert([
                 'name' => $request->name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
+                'image' => $request->image,
+                'role' => $request->role,
+                'credit_balance'=> $request->credit_balance
             ]);
 
             return redirect('/login')->with('success', 'new account has been created, please login!😋');

@@ -61,18 +61,17 @@ class HotelController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {   
-        dd($request);
+        // dd($request);
         try {
             $request->validate([
-                'name_hotel' => 'required|unique:hotels|min:5',
-                'alamat' => 'required|min:5',
+                'name_hotel' => 'unique:hotels|min:5',
+                'alamat' => 'min:5',
                 'image_url' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-                'total_room' => 'required|min:1'
+                'total_room' => 'min:1'
             ]);
-    
-            $hotel = Hotel::find($request->id);
+            $hotel = Hotel::find($id);
     
             // Lakukan perubahan pada atribut hotel
             $hotel->name_hotel = $request->name_hotel;
@@ -86,10 +85,10 @@ class HotelController extends Controller
                 // Simpan file gambar yang baru
                 $imageUrl = $request->file('image_url')->store('images');
                 $hotel->image_url = $imageUrl;
-                // Simpan perubahan pada hotel
-                $hotel->save();
+            } else {
+                $hotel->image_url = $hotel->image_url;
             }
-            
+            $hotel->save();
             // Redirect kembali ke halaman edit dengan pesan sukses
             return redirect('/hotel')->with('success', 'Hotel updated successfully');
         } catch (\Throwable $th) {

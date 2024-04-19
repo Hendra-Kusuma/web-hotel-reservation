@@ -5,7 +5,7 @@
     <div class="container mt-5 bg-light">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title text-center">Register</h5>
+                <h5 class="card-title text-center">Admin Register</h5>
                 <form action="/register" method="POST">
                     @csrf
                     <div class="mb-3">
@@ -32,6 +32,9 @@
                     <div class="d-grid gap-2">
                         <button type="submit" class="btn btn-primary">Register</button>
                     </div>
+                    <input type="hidden" name="role" value="admin">
+                    <input type="hidden" name="image" value="no-photo">
+                    <input type="hidden" name="credit_balance" value="0">
                     <br>
                     <p>have an account? login <a href="/login" style="color: blue">here</a></p>
                     <br>

@@ -25,13 +25,10 @@
                             <a class="nav-link" href="/home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/hotel-page">Hotel Page</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="/hotel">Hotel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/user-page">User Page</a>
+                            <a class="nav-link" href="/user">User</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/report">Report</a>

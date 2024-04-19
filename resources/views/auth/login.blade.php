@@ -36,7 +36,7 @@
                             <br>
                             <button type="submit" class="btn btn-primary btn-block btn-login">Login</button>
                             <br>
-                            <p>dont have a account? sign up <a href="/register" style="color: blue">here</a></p>
+                            <p>dont have a account? contact your admin 😊</p>
                         </form>
                     </div>
                 </div>
