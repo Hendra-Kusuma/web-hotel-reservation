@@ -43,19 +43,13 @@ class AuthController extends Controller
 
     public function login(Request $request){
         try {
-            if(!$request){
-                return response()->json(['message'=>'please input all data'], 404);
-            }
             $request->validate([
                 'email' => 'required|email',
                 'password' => 'required|min:5|max:10'
             ]);
             $cekUser = User::where('email', $request->email)->first();
             if (!$cekUser) {
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Email not found',
-                ], 401);
+                return redirect('/login')->with('error', 'Email not found');
             }
             
             // Jika user ditemukan, lakukan pengecekan password

@@ -2,115 +2,115 @@
     {
         "name_hotel": "Hotel Indonesia Kempinski Jakarta",
         "alamat": "Jl. MH Thamrin No. 1, Jakarta Pusat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 300
     },
     {
         "name_hotel": "Grand Hyatt Jakarta",
         "alamat": "Jl. M.H. Thamrin Kav. 28-30, Jakarta Pusat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 400
     },
     {
         "name_hotel": "Mandarin Oriental Jakarta",
         "alamat": "Jl. M.H. Thamrin, Jakarta Pusat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 250
     },
     {
         "name_hotel": "Pullman Jakarta Central Park",
         "alamat": "Jl. Let. Jend. S. Parman Kav. 28, Jakarta Barat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 350
     },
     {
         "name_hotel": "Sheraton Grand Jakarta Gandaria City Hotel",
         "alamat": "Jl. Sultan Iskandar Muda, Jakarta Selatan",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 280
     },
     {
         "name_hotel": "The Trans Luxury Hotel Bandung",
         "alamat": "Jl. Gatot Subroto No. 289, Bandung, Jawa Barat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 500
     },
     {
         "name_hotel": "Hotel Mulia Senayan, Jakarta",
         "alamat": "Jl. Asia Afrika, Gelora Bung Karno, Jakarta Pusat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 450
     },
     {
         "name_hotel": "Fairmont Jakarta",
         "alamat": "Jl. Asia Afrika No. 8, Jakarta Pusat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 380
     },
     {
         "name_hotel": "The Ritz-Carlton Jakarta, Pacific Place",
         "alamat": "Sudirman Central Business District (SCBD), Jl. Jend. Sudirman Kav. 52-53, Jakarta Selatan",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 350
     },
     {
         "name_hotel": "Hotel Mulia Jakarta",
         "alamat": "Jl. Asia Afrika, Gelora Bung Karno, Jakarta Pusat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 550
     },
     {
         "name_hotel": "Shangri-La Hotel Jakarta",
         "alamat": "Kota BNI, Jl. Jend. Sudirman Kav. 1, Jakarta Pusat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 400
     },
     {
         "name_hotel": "The Ritz-Carlton Bali",
         "alamat": "Jl. Raya Nusa Dua Selatan Lot III, Sawangan, Nusa Dua, Badung, Bali",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 450
     },
     {
         "name_hotel": "Four Seasons Resort Bali at Jimbaran Bay",
         "alamat": "Jimbaran Bay, Badung, Bali",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 300
     },
     {
         "name_hotel": "The Westin Resort Nusa Dua Bali",
         "alamat": "Kawasan Pariwisata Nusa Dua, BTDC Lot N-3, Nusa Dua, Badung, Bali",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 350
     },
     {
         "name_hotel": "Ayana Resort and Spa Bali",
         "alamat": "Jl. Karang Mas Sejahtera, Jimbaran, Badung, Bali",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 400
     },
     {
         "name_hotel": "Mandapa, A Ritz-Carlton Reserve Bali",
         "alamat": "Jl. Kedewatan, Banjar Kedewatan, Ubud, Gianyar, Bali",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 100
     },
     {
         "name_hotel": "The St. Regis Bali Resort",
         "alamat": "Kawasan Pariwisata Nusa Dua, Lot S6, Nusa Dua, Badung, Bali",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 300
     },
     {
         "name_hotel": "Hotel Indonesia Kempinski Jakarta",
         "alamat": "Jl. MH Thamrin No.1, Menteng, Jakarta Pusat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 500
     },
     {
         "name_hotel": "Mandarin Oriental Jakarta",
         "alamat": "Jl. M.H. Thamrin, RT.1/RW.5, Menteng, Jakarta Pusat",
-        "image_url": "/images/hotel.jpg",
+        "image_url": "images/hotel.jpg",
         "total_room": 450
     }
 ]

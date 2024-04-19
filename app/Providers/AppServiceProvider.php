@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Pagination\Paginator;
 use App\Models\Sanctum\PersonalAccessToken;
 use Laravel\Sanctum\Sanctum;
 
@@ -23,5 +24,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         // Sanctum::usePersonalAccessTokenModel(PersonalAccessToken::class);
+        Paginator::useBootstrapFive();
+
     }
 }
