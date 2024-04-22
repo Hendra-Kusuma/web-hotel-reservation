@@ -1,11 +1,10 @@
 @extends('layouts/layout')
 
 @section('content')
-    <div class="container">
-        <div class="row login-container">
-            <div class="col-md-6 offset-md-3">
-                <div class="card card-login">
-                    <div class="card-body">
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="row">
+                <div class="card">
+                    <div class="card-body" style="width: 100%; margin: auto">
                         <h3 class="text-center">Login</h3>
                         @if (session('success'))
                             <div class="alert alert-success">
@@ -33,9 +32,7 @@
                             @error('password')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
-                            <br>
-                            <button type="submit" class="btn btn-primary btn-block btn-login">Login</button>
-                            <br>
+                            <button type="submit" class="btn btn-primary btn-block btn-login mb-4 mt-4">Login</button>
                             <p>dont have a account? contact your admin 😊</p>
                         </form>
                     </div>
