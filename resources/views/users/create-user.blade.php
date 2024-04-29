@@ -44,7 +44,7 @@
                 @error('image')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
-                <input type="hidden" name="role" value='user'>
+                <input type="hidden" name="role" value="user">
                 <button class="btn btn-primary">Submit</button>
             </form>
         </div>

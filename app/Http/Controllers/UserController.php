@@ -40,19 +40,21 @@ class UserController extends Controller
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:5|max:10',
                 'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-                'role' => 'required',
-                'credit_balance'=> 'required'
+                'credit_balance'=> 'required',
+                'role'=>'required'
             ]);
 
             $image = $request->file('image')->store('images');
-            User::create([
+            $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
                 'image' => $image,
-                'role' => $request->role,
-                'credit_balance'=> $request->credit_balance
+                'credit_balance'=> $request->credit_balance,
+                'role'=>$request->role
             ]);
+
+            $user->assignRole('user');
 
             return redirect('/user')->with('success', 'User created successfully');
         } catch (\Throwable $th) {
@@ -90,8 +92,8 @@ class UserController extends Controller
                 'name' => 'unique:users',
                 'email' => 'email|unique:users',
                 'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-                'role' => 'required',
-                'credit_balance' => 'required'
+                'credit_balance' => 'required',
+                'role'=>'required'
             ]);
 
             $user = User::find($id);
@@ -101,6 +103,8 @@ class UserController extends Controller
             $user->email = $request->email;
             $user->role = $request->role;
             $user->credit_balance = $request->credit_balance;
+            $user->role = $request->role;
+            
     
             // Periksa apakah file gambar baru diunggah
             if ($request->hasFile('image')) {

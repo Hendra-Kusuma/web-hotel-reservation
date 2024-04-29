@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Spatie\Permission\Models\Role;
 
 class AuthController extends Controller
 {
@@ -24,19 +25,22 @@ class AuthController extends Controller
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:5|max:10',
                 'image' => 'required',
-                'role' => 'required',
-                'credit_balance'=>'required'
+                'credit_balance'=>'required',
+                'role'=>'required'
 
             ]);
     
-            DB::table('users')->insert([
+            $user = User::factory()->create([
                 'name' => $request->name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
                 'image' => $request->image,
-                'role' => $request->role,
-                'credit_balance'=> $request->credit_balance
+                'credit_balance'=> $request->credit_balance,
+                'role'=>$request->role,
             ]);
+
+            $user->assignRole('admin');
+
 
             return redirect('/login')->with('success', 'new account has been created, please login!😋');
         } catch (\Throwable $th) {
